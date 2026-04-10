@@ -236,7 +236,7 @@
     <script>
         // ДАТА: 12 апреля 2026 года, 12:00 по МОСКВЕ
         function getTargetTimestamp() {
-            const targetDate = new Date(2026, 3, 12, 12, 0, 0);
+            const targetDate = new Date(2025, 3, 12, 12, 0, 0);
             const localOffset = targetDate.getTimezoneOffset();
             const mskOffset = -180;
             const correctedTarget = new Date(targetDate.getTime() + (localOffset - mskOffset) * 60000);
